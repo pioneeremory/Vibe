@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-dark font-heading antialiased overflow-x-hidden;
+    background-color: theme('colors.background');
+    color: theme('colors.dark');
+  }
+
+  ::selection {
+    @apply bg-accent text-primary;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.background'); 
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.dark'); 
+  border-radius: 4px;
+}
+
+/* Global specific interaction utility */
+.magnetic {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.magnetic:hover {
+  transform: scale(1.03);
+}
+
+.lift {
+  transition: transform 0.2s ease;
+}
+.lift:hover {
+  transform: translateY(-1px);
+}
