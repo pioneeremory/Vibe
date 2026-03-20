@@ -36,10 +36,10 @@ export default function Navbar() {
         </div>
         
         <div className="hidden md:flex items-center gap-8 font-data text-sm tracking-widest uppercase">
-          <a href="#features" className="hover:text-accent transition-colors lift">Features</a>
-          <a href="#philosophy" className="hover:text-accent transition-colors lift">Philosophy</a>
-          <a href="#protocol" className="hover:text-accent transition-colors lift">Protocol</a>
-          <a href="#shop" className="hover:text-accent transition-colors lift">Shop</a>
+          <a href="/#features" className="hover:text-accent transition-colors lift">Features</a>
+          <a href="/#philosophy" className="hover:text-accent transition-colors lift">Philosophy</a>
+          <a href="/#protocol" className="hover:text-accent transition-colors lift">Protocol</a>
+          <a href="/shop" className="hover:text-accent transition-colors lift">Shop</a>
         </div>
         
         <a href="tel:2533921818" className={`relative inline-block overflow-hidden group px-6 py-2 rounded-full font-heading font-semibold text-sm transition-colors magnetic ${
